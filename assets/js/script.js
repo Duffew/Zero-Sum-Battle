@@ -12,10 +12,11 @@ let choice;
 let computerChoice;
 let result;
 
-/** add event listeners for buttons 
- *
+/**
+ * event listeners for buttons and 
+ * main game function
  * */
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName('button');
 
     for (let button of buttons) {
