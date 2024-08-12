@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             displayPlayerChoice.innerHTML = choice;
             createComputerChoice();
             calculateResult();
+            updateTally();
         })
     }
 })
@@ -79,3 +80,18 @@ function createComputerChoice() {
     displayResult.innerHTML = result;
 }
 
+/**
+ * Create a function to update player
+ * and computer tally
+ * Credit Code Institute - Love Maths tutor
+ */
+function updateTally() {
+    if (result === "You win!") {
+        let oldPlayerTally = parseInt(document.getElementById("player-tally").innerText);
+        document.getElementById("player-tally").innerText = ++oldPlayerTally;
+    }
+    if (result === "You lose!") {
+        let oldComputerTally = parseInt(document.getElementById("computer-tally").innerText);
+        document.getElementById("computer-tally").innerText = ++oldComputerTally;
+    }
+}
