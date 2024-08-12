@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="assets/css/sytle.css">
 </head>
 <body>
-    <script src="assets/js/script.js"></script>
+    <!-- header -->
+    <header class="heading">
+        <h1>Zer0-Sum Battle</h1>
+        </heading>
+        <!-- game area -->
+        <section class="game-area">
+            <h2 class="game-area-heading">Choose Your Weapon</h2>
+            <div class="controls-area">
+                <button class="btn" aria-label="rock">👊</button>
+                <button class="btn" aria-label="paper">🤚</button>
+                <button class="btn" aria-label="scissors">✌</button>
+            </div>
+
+            <!-- game table -->
+            <div class="emojis">
+                <table class="table">
+                    <tr>
+                        <th>You chose:</th>
+                        <th></th>
+                        <th>Computer chose:</th>
+                    </tr>
+                    <tr>
+                        <td><span id="player-emoji"></span></td>
+                        <td></td>
+                        <td><span id="computer-emoji"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- results area -->
+            <div id="result-message"></div>
+
+            <!-- tally area-->
+            <h3 class="tally-area-heading">Tally</h3>
+            <div class="tally-area">
+                <p class="tally">You: <span id="player-tally">0</span></p>
+                <p class="tally">Computer: <span id="computer-tally">0</span></p>
+            </div>
+        </section>
+
+        <footer class="footer">footer</footer>
+        <script src="script.js"></script>
 </body>
+
 </html>
