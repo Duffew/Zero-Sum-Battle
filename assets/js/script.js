@@ -10,6 +10,7 @@ const displayResult = document.getElementById('result-message');
 let buttons = ['rock', 'paper', 'scissors'];
 let choice;
 let computerChoice;
+let result;
 
 /** add event listeners for buttons 
  *
